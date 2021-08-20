@@ -35,6 +35,8 @@ public class FilpKartController {
 		//map.addAttribute("list","saved"+id);
 		return "FilpKartRegister";
 	}
+
+        //it shows all saved data
 	@RequestMapping("/all")
 	public String getAllData(ModelMap map) {
 	
