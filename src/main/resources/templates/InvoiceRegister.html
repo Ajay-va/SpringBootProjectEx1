@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a th:href="@{/invoice/all}">ALL</a>
+
+<form action="save" method="post">
+
+
+<h1>Welcome to Invoice Register</h1>
+
+<pre>
+id<input type="text" name="id"/>
+Data<input type="text" name="data"/>
+Code<input type="text" name="code"/>
+
+<input type="submit" name="register"/>
+</pre>
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Welcome to Invoice Data</h1>
+<a th:href="@{/invoice/register}">Register</a>
+<table border="2">
+<tr>
+<th>ID</th>
+
+<th>DATA</th>
+
+<th>CODE</th>
+
+<th>OPERATIONS</th>
+
+
+</tr>
+<tr th:each="ob:${list}">
+<td th:text="${ob.id}"></td>
+<td th:text="${ob.data}"></td>
+<td th:text="${ob.code}"></td>
+<td >
+
+<a th:href="@{/invoice/delete/{id}   (id=${ob.id})}">DELETE</a>
+
+<a th:href="@{/invoice/update/{id} (id=${ob.id})}">UPDATE</a>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>

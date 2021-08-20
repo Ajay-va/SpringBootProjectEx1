@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/Filpkart/save}" method="post" th:object="${list}" >
+
+Fid<Input type="text" th:field="*{fid}"/>
+
+FName<Input type="text" th:field="*{fName}"/>
+
+FMobile<Input type="text" th:field="*{fmobile}"/>
+
+FGmial<Input type="text" th:field="*{fgmail}"/>
+
+<input type="submit" name="update">
+
+</form>
+
+</body>
+</html>

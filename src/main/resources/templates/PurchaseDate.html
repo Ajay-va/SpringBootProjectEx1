@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html   xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+
+<tr>
+
+<th>PurchaseId</th>
+<th>PurchaseName</th>
+<th>PurchaseDetails</th>
+<th>PurchaseQuantity</th>
+
+</tr>
+
+<tr th:each="ob:${list}">
+<td th:text="${ob.pid}"></td>
+<td th:text="${ob.pname}"></td>
+<td th:text="${ob.pdetails}"></td>
+<td th:text="${ob.pquantity}"></td>
+<td>
+
+
+<a th:href="@{/purchase/delete/{id} (id=${ob.pid})}">DELETE</a>
+<a th:href="@{/purchase/update/{id} (id=${ob.pid})}">UPDATE</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="2">
+
+<tr>
+<th>FID</th>
+
+<th>FNAME</th>
+
+<th>FMOBILE</th>
+
+<th>FGMAIL</th>
+
+
+<th>OPERATIONS</th>
+
+</tr>
+
+<tr th:each="ob:${list}">
+<td th:text="${ob.fid}"></td>
+<td th:text="${ob.fName}"></td>
+<td th:text="${ob.fmobile}"></td>
+<td th:text="${ob.fgmail}"></td>
+
+<td>
+<a th:href="@{/Filpkart/delete/{id} (id=${ob.fid})}">DELETE</a>
+
+<a th:href="@{/Filpkart/update/{id} (id=${ob.fid})}">EDIT</a>
+
+</td>
+</tr>
+</table>
+</body>
+</html>
