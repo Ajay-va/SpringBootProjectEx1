@@ -27,6 +27,8 @@ public class FilpKartController {
 	public String saveRegisterPage() {
 		return "FilpKartRegister";
 	}
+
+        //it shows save all data 
 	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public String saveData(@ModelAttribute FilpKart filpkart,ModelMap map) {
 		Integer id=service.saveFilpKart(filpkart);
