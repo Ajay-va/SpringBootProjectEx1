@@ -53,6 +53,7 @@ public class FilpKartController {
 		model.addAttribute("list",filp);
 		return "FilpKartData";
 	}
+         //it update the data by id
 	@RequestMapping("/update/{id}")
 	public String updateData(@PathVariable Integer id,Model model) {
 		FilpKart s=service.updateFilpKart(id);
