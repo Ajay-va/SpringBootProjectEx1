@@ -45,6 +45,7 @@ public class FilpKartController {
 		
 		return "FilpKartData";
 	}
+        //it delete the particular row data
 	@RequestMapping("/delete/{id}")
 	public String deleteData(FilpKart f,@PathVariable Integer id,Model model) {
 		service.deleteFilpKart(id);
