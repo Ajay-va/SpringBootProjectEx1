@@ -24,6 +24,7 @@ public class InvoiceController {
 	public String showRegisterPage() {	
 		return  "InvoiceRegister";
 	}
+        //it show save the data
 	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public String saveDataInDatabase(@ModelAttribute Invoice invoice,Model model) {
 		
