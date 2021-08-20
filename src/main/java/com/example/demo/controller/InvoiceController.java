@@ -19,7 +19,7 @@ public class InvoiceController {
 	
 	@Autowired
 	private InvoiceServiceImpl service;
-	
+	//it show register page
 	@RequestMapping("/register")
 	public String showRegisterPage() {	
 		return  "InvoiceRegister";
