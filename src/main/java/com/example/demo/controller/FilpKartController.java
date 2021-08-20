@@ -21,6 +21,8 @@ public class FilpKartController {
 
 	@Autowired
 	private IFilpKartService service;
+
+        //it shows registration page 
 	@RequestMapping("/register")
 	public String saveRegisterPage() {
 		return "FilpKartRegister";
