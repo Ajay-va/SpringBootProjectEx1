@@ -19,6 +19,7 @@ public class SalesController {
 	
 	@Autowired 
 	private SalesServiceImpl service;
+        //we add get mapping annotation
 	@GetMapping("/register")
 	public String showRegister() {
 		return "Regi";
